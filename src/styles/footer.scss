@@ -1,0 +1,19 @@
+footer {
+  text-align: center;
+  font-size: 11px;
+  color: lighten($clr-primary, 12%);
+
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $font-size-content;
+    justify-content: center;
+    width: 50vw;
+    margin: 5px auto;
+
+    i {
+      font-size: 2rem;
+      color: lighten($clr-primary, 10%);
+    }
+  }
+}

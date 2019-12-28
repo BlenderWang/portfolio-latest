@@ -1,0 +1,13 @@
+.all-texts {
+  position: relative;
+  left: 17%;
+  transform: translateY(60%);
+  width: 80%;
+  height: 90vh;
+  overflow-wrap: break-word;
+
+  .page-title {
+    font-size: calc(12px * 1.2);
+    transform: translateY(-8em);
+  }
+}

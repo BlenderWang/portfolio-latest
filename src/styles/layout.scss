@@ -1,0 +1,10 @@
+@import "../styles/global.scss";
+@import "../styles/title-text.scss";
+@import "../styles/index-page.scss";
+@import "../styles/footer.scss";
+
+.container {
+  margin: auto;
+  max-width: 100vw;
+  height: 100vh;
+}

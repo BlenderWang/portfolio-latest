@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto|Roboto+Condensed&display=swap");
+
+// define variables
+$font-paragraph: "Roboto Condensed";
+$font-title: "Roboto";
+$font-alt: "Raleway";
+
+$font-size-content: 14px;
+
+$clr-primary: #1a2736;
+$clr-accent: #ff6d6d;
+$clr-dark: #4b4b4b;
+$clr-light: #eeeeee;
+
+// transition mixin
+@mixin transition-ease {
+  transition: all 0.4s ease-in-out;
+}
+
+// media queries mixins
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
+
+// global style
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-paragraph, sans-serif;
+  font-size: $font-title;
+  background: $clr-primary;
+  color: $clr-light;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  text-transform: uppercase;
+  // text-align: center;
+  font-family: $font-alt, serif;
+}
+
+.page-title {
+  span {
+    color: $clr-accent;
+  }
+}
+
+p {
+  display: inline;
+  font-size: 1rem;
+  // text-align: center;
+
+  span {
+    color: $clr-accent;
+  }
+}
+
+a {
+  color: $clr-light;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 100%;
+
+  &:hover,
+  &:active {
+    outline-width: 0;
+    color: lighten($clr-primary, 85%);
+    @include transition-ease;
+  }
+}
