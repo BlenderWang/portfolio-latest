@@ -3,6 +3,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Menu from "../components/Menu"
 import TitleText from "../components/TitleText"
 import Title from "../components/Title"
 import Paragraph from "../components/Paragraph"
@@ -11,6 +12,7 @@ import Footer from "../components/Footer"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <Menu />
     <TitleText titleText={"hey"} />
     <div className="all-texts">
       <Title title={`I'm `} titleSpan={`Shirley Wang`} />

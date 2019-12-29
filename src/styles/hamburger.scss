@@ -1,0 +1,65 @@
+.menu-btn {
+  position: fixed;
+  top: 2.25rem;
+  right: 2.25rem;
+  width: 25px;
+  height: 20px;
+  z-index: 12;
+  cursor: pointer;
+  @include transition-ease;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__hamburger {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 25px;
+    height: 2px;
+    background: $clr-light;
+    @include transition-ease;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      width: 20px;
+      height: 2px;
+      background: $clr-light;
+      @include transition-ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      width: 30px;
+      height: 2px;
+      background: $clr-light;
+      @include transition-ease;
+    }
+
+    &.open {
+      transform: rotate(720deg);
+      background: transparent;
+
+      &::before {
+        background: $clr-primary;
+        transform: rotate(45deg) translate(5px, 8px);
+      }
+
+      &::after {
+        width: 22px;
+        top: 10px;
+        background: $clr-primary;
+        transform: rotate(-45deg) translate(3px, -7px);
+      }
+    }
+  }
+}
