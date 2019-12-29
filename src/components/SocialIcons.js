@@ -11,9 +11,27 @@ export default () => {
           defer={true}
         ></script>
       </Helmet>
-      <i className={`fab fa-github-square`} />
-      <i className="fab fa-linkedin" />
-      <i className="fas fa-envelope"></i>
+      <a
+        href="https://github.com/BlenderWang"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i className={`fab fa-github-square`} />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/shirley-wang-37b7457b/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i className="fab fa-linkedin" />
+      </a>
+      <a
+        href="mailto:shirleywang527@gmail.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i className="fas fa-envelope"></i>
+      </a>
     </div>
   )
 }

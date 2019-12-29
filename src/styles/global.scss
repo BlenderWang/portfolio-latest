@@ -85,16 +85,16 @@ p {
   }
 }
 
-a {
-  color: $clr-light;
-  text-decoration: none;
-  background-color: transparent;
-  font-size: 100%;
+// a {
+//   color: $clr-light;
+//   text-decoration: none;
+//   background-color: transparent;
+//   font-size: 100%;
 
-  &:hover,
-  &:active {
-    outline-width: 0;
-    color: lighten($clr-primary, 85%);
-    @include transition-ease;
-  }
-}
+//   &:hover,
+//   &:active {
+//     outline-width: 0;
+//     color: lighten($clr-primary, 85%);
+//     @include transition-ease;
+//   }
+// }
