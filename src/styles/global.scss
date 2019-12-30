@@ -5,7 +5,7 @@ $font-paragraph: "Roboto Condensed";
 $font-title: "Roboto";
 $font-alt: "Raleway";
 
-$font-size-content: 14px;
+$font-size-content: 16px;
 
 $clr-primary: #1a2736;
 $clr-accent: #ff6d6d;
@@ -51,7 +51,7 @@ html {
 
 body {
   font-family: $font-paragraph, sans-serif;
-  font-size: $font-title;
+  font-size: 1rem;
   background: $clr-primary;
   color: $clr-light;
   overflow: hidden;

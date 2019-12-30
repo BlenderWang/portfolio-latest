@@ -4,6 +4,8 @@ footer {
   text-align: center;
   font-size: 11px;
   color: lighten($clr-primary, 12%);
+  max-height: 10vh;
+  width: auto;
 
   .icons {
     display: grid;
@@ -22,6 +24,33 @@ footer {
         color: $clr-accent;
         cursor: pointer;
       }
+    }
+  }
+
+  span {
+    display: none;
+  }
+
+  @include media-md {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    font-size: 1.5vw;
+    margin-left: 8vw;
+
+    .icons {
+      width: 25vw;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 5vw;
+    }
+  }
+
+  @include media-lg {
+    i {
+      font-size: 3vw !important;
     }
   }
 }
