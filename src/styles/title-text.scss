@@ -1,15 +1,25 @@
 .title-text {
   color: lighten($clr-primary, 3%);
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+  // display: grid;
+  // grid-template-columns: 1fr;
+  // justify-items: center;
+  // align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 
   h1 {
     font-size: 36vw;
     font-weight: 900;
+    word-wrap: break-word;
+    width: 100px;
+
+    @include media-md {
+      width: initial;
+    }
   }
 }

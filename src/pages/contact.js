@@ -3,18 +3,17 @@ import Layout from "../components/layout"
 import Menu from "../components/Menu"
 import Footer from "../components/Footer"
 import TitleText from "../components/TitleText"
-
 import SEO from "../components/seo"
 
-const about = () => {
+const contact = () => {
   return (
     <Layout>
-      <SEO title="Page About" />
+      <SEO title="Page contact" />
       <Menu />
-      <TitleText titleText={"about"} />
+      <TitleText titleText={"contact"} />
       <Footer />
     </Layout>
   )
 }
 
-export default about
+export default contact
