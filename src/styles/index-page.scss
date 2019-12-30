@@ -7,7 +7,27 @@
   overflow-wrap: break-word;
 
   .page-title {
-    font-size: calc(12px * 1.2);
+    font-size: calc(14px * 1.2);
     transform: translateY(-8em);
+  }
+
+  @include media-md {
+    transform: translateY(70%);
+
+    .page-title {
+      transform: translateY(-16em);
+    }
+
+    p {
+      font-size: 2vw;
+    }
+  }
+
+  @include media-lg {
+    transform: translateY(76%);
+
+    .page-title {
+      font-size: 2vw;
+    }
   }
 }

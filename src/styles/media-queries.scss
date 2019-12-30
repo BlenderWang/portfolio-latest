@@ -1,0 +1,57 @@
+// min-width: 768px
+@include media-md {
+  //   menu.scss
+  .nav {
+    visibility: initial !important;
+    top: 12% !important;
+
+    .menu-list {
+      flex-direction: row !important;
+      justify-content: flex-end !important;
+      align-items: unset !important;
+      height: auto !important;
+      background: transparent !important;
+      min-height: initial !important;
+      transform: translateY(-3.8rem) !important;
+
+      &__item {
+        margin: 0 0.55rem;
+        color: lighten($clr-primary, 8%) !important;
+        transform: none !important;
+      }
+
+      &__link {
+        font-size: 2vw !important;
+        padding: 0 1.2em !important;
+        color: lighten($clr-primary, 8%) !important;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -12%;
+          left: 0;
+          height: 5px;
+          width: 0;
+          background: $clr-accent;
+          transition-property: width;
+          transition-duration: 0.3s;
+          transition-timing-function: ease-in-out;
+        }
+
+        &:hover::before {
+          right: 0;
+          left: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// min-width: 1024px
+@include media-lg {
+}
+
+// min-width: 1600px
+@include media-xl {
+}
