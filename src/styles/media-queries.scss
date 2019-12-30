@@ -25,6 +25,10 @@
         padding: 0 1.2em !important;
         color: lighten($clr-primary, 8%) !important;
 
+        &:hover {
+          color: $clr-light !important;
+        }
+
         &::before {
           content: "";
           position: absolute;

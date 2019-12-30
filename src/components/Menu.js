@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "gatsby"
 import Hamburger from "./Hamburger"
 
 export default class Menu extends Component {
@@ -50,9 +51,13 @@ export default class Menu extends Component {
           <ul className={menuList}>
             {pages.map(page => (
               <li key={page.id} className={menuItem}>
-                <a href={`/${page.url}`} className="menu-list__link">
+                <Link
+                  to={`/${page.url}`}
+                  className="menu-list__link"
+                  activeClassName="active-class"
+                >
                   {page.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
