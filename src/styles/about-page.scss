@@ -1,13 +1,35 @@
-.bg-light {
-  position: relative;
-  top: 10vh;
-  width: 80vw;
-  height: 70vh;
-  margin: auto;
-  background: $clr-light;
+.content {
+  min-height: calc(100vh - 10%);
+  display: flex;
+  align-items: center;
 
-  img {
-    max-width: 240px;
+  .bg-light {
+    position: relative;
+    top: 6vh;
+    width: 80vw;
     height: auto;
+    margin: auto;
+    background-color: darken($clr-light, 28%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0px 1px 20px 2px darken($clr-primary, 4%);
+
+    img {
+      position: relative;
+      transform: translateY(-1em);
+      max-width: 240px;
+      height: auto;
+      border-radius: 2px;
+      box-shadow: 0px 1px 10px 1px darken($clr-light, 43%);
+    }
+
+    p {
+      max-width: 90%;
+      margin: 0 auto 0.65em;
+      color: $clr-dark;
+    }
   }
 }

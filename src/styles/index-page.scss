@@ -3,7 +3,8 @@
   left: 17%;
   transform: translateY(60%);
   width: 80%;
-  height: 90vh;
+  // height: 90vh;
+  min-height: calc(100vh - 10%);
   overflow-wrap: break-word;
 
   .page-title {

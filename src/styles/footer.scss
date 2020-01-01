@@ -6,6 +6,7 @@ footer {
   color: lighten($clr-primary, 12%);
   max-height: 10vh;
   width: auto;
+  background: $clr-primary;
 
   .icons {
     display: grid;
