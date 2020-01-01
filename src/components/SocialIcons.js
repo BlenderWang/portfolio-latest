@@ -9,6 +9,8 @@ export default () => {
           src="https://kit.fontawesome.com/3e27283071.js"
           crossorigin="anonymous"
           defer={true}
+          SameSite="None"
+          Secure
         ></script>
       </Helmet>
       <a

@@ -1,0 +1,13 @@
+.bg-light {
+  position: relative;
+  top: 10vh;
+  width: 80vw;
+  height: 70vh;
+  margin: auto;
+  background: $clr-light;
+
+  img {
+    max-width: 240px;
+    height: auto;
+  }
+}
