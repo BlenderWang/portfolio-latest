@@ -19,6 +19,7 @@ footer {
     i {
       font-size: 2rem;
       color: lighten($clr-primary, 10%);
+      @include transition-ease;
 
       &:hover,
       &:focus {
@@ -46,6 +47,13 @@ footer {
     span {
       display: inline-block;
       font-size: 5vw;
+      cursor: pointer;
+      @include transition-ease;
+
+      &:hover,
+      &:focus {
+        color: $clr-accent;
+      }
     }
   }
 
