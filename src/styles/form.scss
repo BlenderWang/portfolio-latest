@@ -1,0 +1,61 @@
+form {
+  display: grid;
+  grid-gap: 1rem;
+
+  input,
+  textarea {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 13px 13px 13px 15px;
+    width: 100%;
+
+    &:focus {
+      color: $clr-dark;
+      outline: $clr-primary auto 2px;
+    }
+  }
+
+  textarea {
+    line-height: 150%;
+    resize: vertical;
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      width: initial;
+      font-size: 1em;
+      background: transparent;
+      color: $clr-light;
+      @include transition-ease;
+
+      &:hover {
+        color: $clr-light;
+        border: none;
+      }
+    }
+
+    .btn--primary {
+      &:hover {
+        background: $clr-dark;
+      }
+    }
+
+    .btn--danger {
+      &:hover {
+        background: $clr-accent;
+      }
+    }
+  }
+
+  @include media-md {
+    width: 75vw;
+  }
+
+  @include media-lg {
+    width: 50vw;
+  }
+}

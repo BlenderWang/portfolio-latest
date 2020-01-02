@@ -1,0 +1,22 @@
+.content-contact-page {
+  flex-direction: column;
+  justify-content: center;
+
+  @include media-lg {
+    padding-top: 3%;
+  }
+
+  .contact-texts {
+    max-width: 80vw;
+    margin-bottom: 1rem;
+
+    @include media-lg {
+      width: 65vw;
+      margin-bottom: 1.5rem;
+
+      p {
+        font-size: 2vw;
+      }
+    }
+  }
+}
