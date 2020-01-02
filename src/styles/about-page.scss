@@ -36,5 +36,40 @@
         color: $clr-dark;
       }
     }
+
+    @include media-md {
+      flex-direction: row;
+      justify-content: center;
+      padding: 1rem;
+      padding-left: 2.2rem;
+
+      img {
+        transform: translateY(-5.8em);
+      }
+
+      .about-texts {
+        padding: 2em;
+      }
+    }
+
+    @include media-lg {
+      width: 65vw;
+
+      img {
+        transform: translateY(-3.8em);
+      }
+    }
+
+    @include media-xl {
+      width: 50vw;
+
+      img {
+        transform: translateY(-7.8em);
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+    }
   }
 }
