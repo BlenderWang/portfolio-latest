@@ -15,19 +15,29 @@ const about = () => {
     <Layout>
       <SEO title="Page About" />
       <Menu />
-      <TitleText titleText={"about"} />
+      <Spring
+        from={{ opacity: 0, transform: `translate3d(200px, 0, 0)` }}
+        to={{ opacity: 1, transform: `translate3d(0, 0, 0)` }}
+        config={{ duration: 1000 }}
+      >
+        {props => (
+          <div style={props}>
+            <TitleText titleText={"about"} />
+          </div>
+        )}
+      </Spring>
       <div className="content">
         <Spring
           from={{ opacity: 0 }}
           to={{ opacity: 1 }}
-          config={{ duration: 750 }}
+          config={{ duration: 1200 }}
         >
           {props => (
             <div style={props} className="bg-light">
               <Spring
                 from={{ opacity: 0, transform: `translateX(-50px)` }}
                 to={{ opacity: 1, transform: `translateX(0)` }}
-                config={{ delay: 1000, duration: 750 }}
+                config={{ delay: 1350, duration: 750 }}
               >
                 {props => <img style={props} src={aboutImg} alt="about me" />}
               </Spring>
@@ -46,7 +56,7 @@ const about = () => {
                 <Spring
                   from={{ opacity: 0, transform: `translateY(-10px)` }}
                   to={{ opacity: 1, transform: `translateY(0)` }}
-                  config={{ delay: 1400, duration: 750 }}
+                  config={{ delay: 1500, duration: 750 }}
                 >
                   {props => (
                     <div style={props}>

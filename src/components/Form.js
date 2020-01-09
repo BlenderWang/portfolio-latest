@@ -39,7 +39,7 @@ export default class Index extends React.Component {
         <Spring
           from={{ opacity: 0 }}
           to={{ opacity: 1 }}
-          config={{ delay: 1500, duration: 1000 }}
+          config={{ delay: 1750, duration: 1000 }}
         >
           {props => (
             <form
