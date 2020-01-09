@@ -6,6 +6,8 @@ import TitleText from "../components/TitleText"
 import Paragraph from "../components/Paragraph"
 import aboutImg from "../images/aboutImg.jpg"
 import { Spring } from "react-spring/renderprops"
+import { Link } from "gatsby"
+
 import SEO from "../components/seo"
 
 const about = () => {
@@ -83,6 +85,9 @@ const about = () => {
           )}
         </Spring>
       </div>
+      <Link to="/portfolio">
+        <span className="arrow">&#8594;</span>
+      </Link>
       <Footer />
     </Layout>
   )

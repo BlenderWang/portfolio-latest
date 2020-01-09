@@ -29,9 +29,9 @@ footer {
     }
   }
 
-  span {
-    display: none;
-  }
+  // span {
+  //   display: none;
+  // }
 
   @include media-md {
     display: grid;
@@ -44,17 +44,17 @@ footer {
       width: 25vw;
     }
 
-    span {
-      display: inline-block;
-      font-size: 5vw;
-      cursor: pointer;
-      @include transition-ease;
+    // span {
+    //   display: inline-block;
+    //   font-size: 5vw;
+    //   cursor: pointer;
+    //   @include transition-ease;
 
-      &:hover,
-      &:focus {
-        color: $clr-accent;
-      }
-    }
+    //   &:hover,
+    //   &:focus {
+    //     color: $clr-accent;
+    //   }
+    // }
   }
 
   @include media-lg {

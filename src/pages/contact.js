@@ -6,6 +6,7 @@ import TitleText from "../components/TitleText"
 import Paragraph from "../components/Paragraph"
 import Form from "../components/Form"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 import { Spring } from "react-spring/renderprops"
 
 const contact = () => {
@@ -42,6 +43,9 @@ const contact = () => {
           </div>
         )}
       </Spring>
+      <Link to="/">
+        <span className="arrow">&#8594;</span>
+      </Link>
       <Footer />
     </Layout>
   )

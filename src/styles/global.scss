@@ -100,3 +100,29 @@ p {
 //     @include transition-ease;
 //   }
 // }
+
+.arrow {
+  display: none;
+
+  @include media-md {
+    position: absolute;
+    right: 15vw;
+    bottom: 4.5vh;
+    z-index: 20;
+    display: inline-block;
+    font-size: 5vw;
+    color: lighten($clr-primary, 10%);
+    cursor: pointer;
+    @include transition-ease;
+
+    &:hover,
+    &:focus {
+      color: $clr-accent;
+    }
+  }
+
+  @include media-lg {
+    right: 12vw;
+    bottom: 3vh;
+  }
+}

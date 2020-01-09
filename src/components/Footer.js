@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <SocialIcons />© {new Date().getFullYear()} || Shirley Wang@wangimation
-      <span>&#8594;</span>
+      {/* <span>&#8594;</span> */}
     </footer>
   )
 }
