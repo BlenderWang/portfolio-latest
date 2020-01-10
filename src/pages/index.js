@@ -7,16 +7,18 @@ import Menu from "../components/Menu"
 import TitleText from "../components/TitleText"
 import Title from "../components/Title"
 import Paragraph from "../components/Paragraph"
+import Svg from "../components/Svg"
 import Footer from "../components/Footer"
 
 const IndexPage = () => (
   <Layout>
+    <Svg />
     <SEO title="Home" />
     <Menu />
     <Spring
       from={{ transform: `translateX(100%)`, opacity: 0 }}
       to={{ transform: `translateX(0%)`, opacity: 1 }}
-      config={{ duration: 1000 }}
+      config={{ delay: 3500, duration: 2000 }}
     >
       {props => (
         <div style={props}>
@@ -28,7 +30,7 @@ const IndexPage = () => (
       <Spring
         from={{ transform: `translateY(-50px)`, opacity: 0 }}
         to={{ transform: `translateY(0)`, opacity: 1 }}
-        config={{ delay: 1200, duration: 500 }}
+        config={{ delay: 6200, duration: 500 }}
       >
         {props => (
           <div style={props}>
@@ -39,7 +41,7 @@ const IndexPage = () => (
       <Spring
         from={{ transform: `translateY(50px)`, opacity: 0 }}
         to={{ transform: `translateY(0)`, opacity: 1 }}
-        config={{ delay: 1500, duration: 500 }}
+        config={{ delay: 6500, duration: 500 }}
       >
         {props => (
           <div style={props}>
