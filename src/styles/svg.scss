@@ -1,0 +1,36 @@
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: path-fill 0.5s ease-in-out 2.5s forwards;
+
+  .path {
+    stroke: white;
+    stroke-dasharray: 448;
+    stroke-dashoffset: 448;
+  }
+
+  .path-left {
+    animation: path-anim 2s ease forwards;
+  }
+
+  .path-right {
+    animation: path-anim 2s ease 0.4s forwards;
+  }
+
+  @keyframes path-anim {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes path-fill {
+    from {
+      fill: transparent;
+    }
+    to {
+      fill: white;
+    }
+  }
+}
