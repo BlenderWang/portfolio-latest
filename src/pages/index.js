@@ -12,9 +12,19 @@ import Footer from "../components/Footer"
 
 const IndexPage = () => (
   <Layout>
-    <Svg />
     <SEO title="Home" />
-    <Menu />
+    <Svg />
+    <Spring
+      from={{ opacity: 0 }}
+      to={{ opacity: 1 }}
+      config={{ delay: 3500, duration: 1000 }}
+    >
+      {opacity => (
+        <div style={opacity}>
+          <Menu />
+        </div>
+      )}
+    </Spring>
     <Spring
       from={{ transform: `translateX(100%)`, opacity: 0 }}
       to={{ transform: `translateX(0%)`, opacity: 1 }}
@@ -56,10 +66,19 @@ const IndexPage = () => (
         )}
       </Spring>
     </div>
-
-    <Link to="/about">
-      <span className="arrow">&#8594;</span>
-    </Link>
+    <Spring
+      from={{ opacity: 0 }}
+      to={{ opacity: 1 }}
+      config={{ delay: 3500, duration: 1000 }}
+    >
+      {opacity => (
+        <div style={opacity}>
+          <Link to="/about">
+            <span className="arrow">&#8594;</span>
+          </Link>
+        </div>
+      )}
+    </Spring>
     <Footer />
   </Layout>
 )
