@@ -152,6 +152,10 @@ $i: 0;
     color: darken($clr-light, 32%);
     padding: 25px;
 
+    &:disabled {
+      color: lighten($clr-primary, 10%);
+    }
+
     &:hover,
     &:focus {
       outline-color: $clr-accent;
