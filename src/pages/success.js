@@ -4,11 +4,11 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Menu from "../components/Menu"
 import Footer from "../components/Footer"
-import SEO from "../components/seo"
+import Title from "../components/Title"
+import Paragraph from "../components/Paragraph"
 
-const NotFoundPage = () => (
+const Success = () => (
   <Layout>
-    <SEO title="404: Not found" />
     <Menu />
     <div
       style={{
@@ -23,8 +23,10 @@ const NotFoundPage = () => (
       }}
     >
       <div style={{ fontSize: `2em` }}>
-        <h1>NOT FOUND</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <Title subtitle={`Thank you very much for contacting me!`} />
+        <Paragraph
+          paragraph={`I'll get back to you shortly. Please have a cup of ☕ and enjoy your day!`}
+        />
       </div>
       <Link
         style={{
@@ -43,4 +45,4 @@ const NotFoundPage = () => (
   </Layout>
 )
 
-export default NotFoundPage
+export default Success
