@@ -150,18 +150,13 @@ $i: 0;
     background: transparent;
     font-size: 3rem;
     color: darken($clr-light, 32%);
+    padding: 25px;
 
     &:hover,
     &:focus {
       outline-color: $clr-accent;
       color: $clr-accent;
       cursor: pointer;
-    }
-
-    &:focus {
-      outline-color: $clr-primary;
-      width: 2.5rem;
-      height: 2.5rem;
     }
   }
 }
