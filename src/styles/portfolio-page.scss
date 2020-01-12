@@ -1,11 +1,9 @@
 .slideshow {
   position: relative;
-  //   max-width: 80vw;
-  //   height: calc(100% - 25vh);
   text-align: center;
   overflow-x: hidden;
-  //   margin: 10vh auto 5vh;
-  padding: 20vh 0;
+  padding: 17vh 0 4rem;
+  min-height: calc(100vh - 10%);
 }
 
 // card styling
@@ -24,12 +22,20 @@
     border-color: $clr-light;
   }
 
+  &--content {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 0.75em;
+  }
+
   h3 {
-    color: $clr-dark;
+    color: transparent;
+    -webkit-text-stroke: 0.25px $clr-primary;
+    font-size: 2em;
   }
 
   img {
-    max-width: calc(50vw);
+    max-width: 90%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -38,13 +44,41 @@
 
   &--details {
     position: relative;
+    color: $clr-dark;
 
     h2 {
       font-size: 1em;
+      margin-bottom: 0.5em;
     }
 
     p {
       text-align: justify;
+      font-size: 0.9em;
+    }
+  }
+
+  &--links {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+    a {
+      color: $clr-light;
+      text-decoration: none;
+      background-color: $clr-primary;
+      border: 1px solid $clr-dark;
+      border-radius: 1px;
+      width: 30%;
+      height: 2em;
+      padding: 0.25em 0;
+
+      &:hover,
+      &:active {
+        outline-width: 0;
+        background: transparent;
+        color: lighten($clr-accent, 85%);
+        @include transition-ease;
+      }
     }
   }
 }
@@ -53,27 +87,42 @@
 // styling of sliders and wrapper
 .slides-wrapper {
   display: flex;
-  //   position: relative;
-  //   width: 80%;
-  //   margin: 0 auto;
-  //   transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  position: relative;
+  @include transition-ease;
+
+  .card {
+    flex: 1;
+    min-width: 220px;
+    opacity: 0.5;
+    transform: scale(0.7);
+    transition: opacity 0.3s linear,
+      transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+}
+
+$i: 0;
+@for $i from 0 through 20 {
+  .cards-slider.active-slide-#{$i} #card-#{$i} {
+    opacity: 1;
+    transform: scale(1);
+
+    .card--details {
+      opacity: 1;
+    }
+  }
 }
 
 .cards-slider {
   position: relative;
-  max-width: 226px;
+  max-width: 220px;
   margin: 0 auto;
-
-  .card {
-    flex: 1;
-  }
 
   &:after {
     content: "";
     display: block;
     width: 100%;
-    height: 264px;
-    outline: 2px solid $clr-accent;
+    height: 100%;
+    outline: 3px solid lighten($clr-primary, 50%);
     position: absolute;
     top: 0;
     left: 0;

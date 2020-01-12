@@ -32,7 +32,7 @@ export default class Slideshow extends Component {
             <div
               className="slides-wrapper"
               style={{
-                transform: `translateX(-${card.id * (100 / cards.length)}%)`,
+                transform: `translateX(-${card.id * 100}%)`,
               }}
             >
               {cards.map(card => (

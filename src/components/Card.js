@@ -1,7 +1,7 @@
 import React from "react"
 
 const Card = ({ card }) => {
-  const { id, count, src, title, content } = card
+  const { id, count, src, title, content, demoLink, repoLink } = card
 
   return (
     <div id={`card-${id}`} className="card">
@@ -11,6 +11,10 @@ const Card = ({ card }) => {
         <div className="card--details">
           <h2>{title}</h2>
           <p>{content}</p>
+        </div>
+        <div className="card--links">
+          <a href={demoLink}>demo</a>
+          <a href={repoLink}>code</a>
         </div>
       </div>
     </div>
