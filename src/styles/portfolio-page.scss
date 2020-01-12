@@ -1,0 +1,108 @@
+.slideshow {
+  position: relative;
+  //   max-width: 80vw;
+  //   height: calc(100% - 25vh);
+  text-align: center;
+  overflow-x: hidden;
+  //   margin: 10vh auto 5vh;
+  padding: 20vh 0;
+}
+
+// card styling
+.card {
+  border: 1px $clr-dark solid;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s linear;
+  cursor: pointer;
+  background-color: $clr-light;
+  padding: 1.2em;
+  margin: 0 auto;
+  max-width: 220px;
+
+  &:hover {
+    background-color: $clr-light;
+    border-color: $clr-light;
+  }
+
+  h3 {
+    color: $clr-dark;
+  }
+
+  img {
+    max-width: calc(50vw);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+  }
+
+  &--details {
+    position: relative;
+
+    h2 {
+      font-size: 1em;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+}
+// end card
+
+// styling of sliders and wrapper
+.slides-wrapper {
+  display: flex;
+  //   position: relative;
+  //   width: 80%;
+  //   margin: 0 auto;
+  //   transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.cards-slider {
+  position: relative;
+  max-width: 226px;
+  margin: 0 auto;
+
+  .card {
+    flex: 1;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 264px;
+    outline: 2px solid $clr-accent;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.buttons {
+  position: relative;
+  margin: 3rem 5.8em -1.2rem;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    color: $clr-light;
+
+    &:hover,
+    &:focus {
+      outline-color: $clr-accent;
+      color: $clr-accent;
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline-color: $clr-primary;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}
