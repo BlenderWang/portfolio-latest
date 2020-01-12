@@ -53,7 +53,7 @@
 
     p {
       text-align: justify;
-      font-size: 0.9em;
+      font-size: 0.85em;
     }
   }
 
@@ -149,7 +149,7 @@ $i: 0;
     border: none;
     background: transparent;
     font-size: 3rem;
-    color: lighten($clr-primary, 22%);
+    color: darken($clr-light, 32%);
 
     &:hover,
     &:focus {

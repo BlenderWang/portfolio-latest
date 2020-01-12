@@ -50,12 +50,34 @@
       }
     }
   }
+
+  // slideshow.scss
+  .slideshow {
+    padding-top: 20vh !important;
+  }
+
+  .cards-slider {
+    max-width: 25vw !important;
+  }
+
+  .card {
+    min-width: 25vw !important;
+  }
 }
 
 // min-width: 1024px
 @include media-lg {
   .menu-list__link::before {
     bottom: -7% !important;
+  }
+
+  .buttons {
+    margin-left: 13vw !important;
+    margin-right: 13vw !important;
+  }
+
+  button {
+    font-size: 4.8rem !important;
   }
 }
 
