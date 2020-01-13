@@ -31,4 +31,12 @@
       font-size: 2vw;
     }
   }
+
+  @include media-xl {
+    transform: translateY(77%);
+
+    .page-title {
+      font-size: 1.8vw;
+    }
+  }
 }
