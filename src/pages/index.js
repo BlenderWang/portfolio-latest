@@ -79,7 +79,17 @@ const IndexPage = () => (
         </div>
       )}
     </Spring>
-    <Footer />
+    <Spring
+      from={{ opacity: 0 }}
+      to={{ opacity: 1 }}
+      config={{ delay: 3500, duration: 1000 }}
+    >
+      {opacity => (
+        <div style={opacity}>
+          <Footer />
+        </div>
+      )}
+    </Spring>
   </Layout>
 )
 
