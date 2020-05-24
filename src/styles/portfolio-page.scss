@@ -141,16 +141,24 @@ $i: 0;
 
 .buttons {
   position: relative;
-  margin: 3rem 5.8em -1.2rem;
+  margin: -1rem 5.8em -7.2rem;
   display: flex;
   justify-content: space-between;
+
+  @include media-md {
+    margin: 3rem 5.8em -1.2rem;
+  }
 
   button {
     border: none;
     background: transparent;
     font-size: 3rem;
     color: darken($clr-light, 32%);
-    padding: 25px;
+    padding: 20px;
+
+    @include media-md {
+      padding: 25px;
+    }
 
     &:disabled {
       color: lighten($clr-primary, 10%);
