@@ -5,12 +5,12 @@ const data = {
       count: `01`,
       src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1617961167/PortfolioAsset/Screenshot_from_2021-04-09_11-37-01.jpg`,
       title: `EShop -- MERN e-commerce project`,
-      content: ``,
+      content: `An e-commerce project taking advantage of the MERN stack and fully incorporate Redux with React.`,
       demoLink: `https://eshop-ecommerce-app.herokuapp.com/`,
       repoLink: `https://github.com/BlenderWang/eshop-ecommerce-app`,
     },
     {
-      id: 0,
+      id: 1,
       count: `01`,
       src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1589715641/PortfolioAsset/Screenshot_20200517_133558.png`,
       title: `my blog with Strapi and React, Apollo and Graphql`,
@@ -19,7 +19,7 @@ const data = {
       repoLink: `https://github.com/BlenderWang/my-blog`,
     },
     {
-      id: 1,
+      id: 2,
       count: `02`,
       src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1578820858/Flax.png`,
       title: `template site with Strapi and Gatsby`,
@@ -28,7 +28,7 @@ const data = {
       repoLink: `https://github.com/BlenderWang/strapi-gatsby-site`,
     },
     {
-      id: 2,
+      id: 3,
       count: `03`,
       src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1569525067/PortfolioAsset/school-project-01.jpg`,
       title: `the white stripes tribute page with Jekyll`,
@@ -37,7 +37,7 @@ const data = {
       repoLink: `https://angry-heisenberg-302cd5.netlify.com/`,
     },
     {
-      id: 3,
+      id: 4,
       count: `04`,
       src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1569525067/PortfolioAsset/carlos-website-template.jpg`,
       title: `an html, css and javascript freelance project`,
@@ -46,7 +46,7 @@ const data = {
       repoLink: `https://github.com/BlenderWang/simpleWebsite`,
     },
     {
-      id: 4,
+      id: 5,
       count: `05`,
       src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1569525066/PortfolioAsset/mini-search.jpg`,
       title: `mini tv/film search demo`,
@@ -55,7 +55,7 @@ const data = {
       repoLink: `https://blenderwang.github.io/tv-search/`,
     },
     {
-      id: 5,
+      id: 6,
       count: `06`,
       src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1569525066/PortfolioAsset/school-project-02.jpg`,
       title: `flexbox vs css grid`,
