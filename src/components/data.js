@@ -3,6 +3,15 @@ const data = {
     {
       id: 0,
       count: `01`,
+      src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1617961167/PortfolioAsset/Screenshot_from_2021-04-09_11-37-01.jpg`,
+      title: `EShop -- MERN e-commerce project`,
+      content: ``,
+      demoLink: `https://eshop-ecommerce-app.herokuapp.com/`,
+      repoLink: `https://github.com/BlenderWang/eshop-ecommerce-app`,
+    },
+    {
+      id: 0,
+      count: `01`,
       src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1589715641/PortfolioAsset/Screenshot_20200517_133558.png`,
       title: `my blog with Strapi and React, Apollo and Graphql`,
       content: `I recently had this urge to make myself a blog for: first to give my digital creation a home in a corner on internet and second I can show off skills besides Front-End development.`,
