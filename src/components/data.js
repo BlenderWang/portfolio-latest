@@ -11,7 +11,7 @@ const data = {
     },
     {
       id: 1,
-      count: `01`,
+      count: `02`,
       src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1589715641/PortfolioAsset/Screenshot_20200517_133558.png`,
       title: `my blog with Strapi and React, Apollo and Graphql`,
       content: `I recently had this urge to make myself a blog for: first to give my digital creation a home in a corner on internet and second I can show off skills besides Front-End development.`,
@@ -20,7 +20,7 @@ const data = {
     },
     {
       id: 2,
-      count: `02`,
+      count: `03`,
       src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1578820858/Flax.png`,
       title: `template site with Strapi and Gatsby`,
       content: `During the first internship, I worked on re-creating the company's website from mockup to final deployment. It has been a super fun and educational process. `,
@@ -29,7 +29,7 @@ const data = {
     },
     {
       id: 3,
-      count: `03`,
+      count: `04`,
       src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1569525067/PortfolioAsset/school-project-01.jpg`,
       title: `the white stripes tribute page with Jekyll`,
       content: `This was my most successful school group project. And I got to do plenty of animation with CSS and AnimeJS.`,
@@ -38,7 +38,7 @@ const data = {
     },
     {
       id: 4,
-      count: `04`,
+      count: `05`,
       src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1569525067/PortfolioAsset/carlos-website-template.jpg`,
       title: `an html, css and javascript freelance project`,
       content: `It was a freelance job I had done for a friend's friend. There was a little bit implementation of parallax effect and pulling images from source.unsplash.com.`,
@@ -47,7 +47,7 @@ const data = {
     },
     {
       id: 5,
-      count: `05`,
+      count: `06`,
       src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1569525066/PortfolioAsset/mini-search.jpg`,
       title: `mini tv/film search demo`,
       content: `A very much simplified IMDB inspired side project using TVMaze API. I learned pretty much on the spot how it worked with Promise. Cool stuff!`,
@@ -56,7 +56,7 @@ const data = {
     },
     {
       id: 6,
-      count: `06`,
+      count: `07`,
       src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1569525066/PortfolioAsset/school-project-02.jpg`,
       title: `flexbox vs css grid`,
       content: `My favorite school project done by only HTML and CSS in such psychodelic color scheme. Needless to say without SCSS it took me quite a while to build it up. It made me love CSS even more!`,
