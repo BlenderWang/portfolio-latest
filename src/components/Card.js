@@ -13,8 +13,12 @@ const Card = ({ card }) => {
           <p>{content}</p>
         </div>
         <div className="card--links">
-          <a href={demoLink}>demo</a>
-          <a href={repoLink}>code</a>
+          <a href={demoLink} className={!demoLink ? "hidden" : "show"}>
+            {!demoLink ? "" : "demo"}
+          </a>
+          <a href={repoLink} className={!repoLink ? "hidden" : "show"}>
+            {!repoLink ? "" : "repo"}
+          </a>
         </div>
       </div>
     </div>

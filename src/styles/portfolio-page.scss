@@ -16,6 +16,7 @@
   padding: 1.2em;
   margin: 0 auto;
   max-width: 220px;
+  scroll-snap-type: x mandatory;
 
   &:hover {
     background-color: $clr-light;
@@ -62,7 +63,7 @@
     justify-content: space-between;
     text-transform: uppercase;
 
-    a {
+    a.show {
       color: $clr-light;
       text-decoration: none;
       background-color: $clr-primary;
@@ -79,6 +80,10 @@
         color: lighten($clr-accent, 85%);
         @include transition-ease;
       }
+    }
+
+    a.hidden {
+      display: none;
     }
   }
 }
