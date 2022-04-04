@@ -175,5 +175,9 @@ $i: 0;
       color: $clr-accent;
       cursor: pointer;
     }
+
+    span {
+      display: none;
+    }
   }
 }

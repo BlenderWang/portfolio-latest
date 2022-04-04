@@ -10,6 +10,7 @@ export default props => {
       onKeyDown={props.handleClick}
     >
       <span
+        aria-label="hamburger-button"
         role="button"
         tabIndex="0"
         className={props.hamburgerClass}

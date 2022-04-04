@@ -1,59 +1,48 @@
-import React, { Component } from "react"
+import React, { useState } from "react"
 import Card from "./Card"
 import data from "./data"
 
-export default class Slideshow extends Component {
-  state = {
-    cards: data.cards,
-    card: data.cards[0],
+const Slideshow = () => {
+  const cards = data.cards
+  const [card, setCard] = useState(data.cards[0])
+
+  const handleNext = () => {
+    const newCard = card.id + 1
+    setCard(cards[newCard])
   }
 
-  handleNext = () => {
-    const newCard = this.state.card.id + 1
-    this.setState({
-      card: data.cards[newCard],
-    })
+  const handlePrev = () => {
+    const newCard = card.id - 1
+    setCard(cards[newCard])
   }
 
-  handlePrev = () => {
-    const newCard = this.state.card.id - 1
-    this.setState({
-      card: data.cards[newCard],
-    })
-  }
-
-  render() {
-    const { cards, card } = this.state
-
-    return (
-      <div className="slideshow">
-        <div className="col">
-          <div className={`cards-slider active-slide-${card.id}`}>
-            <div
-              className="slides-wrapper"
-              style={{
-                transform: `translateX(-${card.id * 100}%)`,
-              }}
-            >
-              {cards.map(card => (
-                <Card key={card.count} card={card} />
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className="buttons">
-          <button onClick={() => this.handlePrev()} disabled={card.id === 0}>
-            &#8592;
-          </button>
-          <button
-            onClick={() => this.handleNext()}
-            disabled={card.id === data.cards.length - 1}
+  return (
+    <section className="slideshow">
+      <div className="col">
+        <section className={`cards-slider active-slide-${card.id}`}>
+          <div
+            className="slides-wrapper"
+            style={{
+              transform: `translateX(-${card.id * 100}%)`,
+            }}
           >
-            &#8594;
-          </button>
-        </div>
+            {cards.map(card => (
+              <Card key={card.count} card={card} />
+            ))}
+          </div>
+        </section>
       </div>
-    )
-  }
+
+      <div className="buttons slideshow-controller">
+        <button onClick={handlePrev} disabled={card.id === 0}>
+          &#8592; <span>Previous</span>
+        </button>
+        <button onClick={handleNext} disabled={card.id === cards.length - 1}>
+          <span>Next</span> &#8594;
+        </button>
+      </div>
+    </section>
+  )
 }
+
+export default Slideshow
