@@ -5,7 +5,6 @@ import Footer from "../components/Footer"
 import TitleText from "../components/TitleText"
 import Slideshow from "../components/Slideshow"
 import { Spring } from "react-spring/renderprops"
-import { Link } from "gatsby"
 import SEO from "../components/seo"
 
 const portfolio = () => {
@@ -36,9 +35,6 @@ const portfolio = () => {
         )}
       </Spring>
 
-      <Link to="/contact">
-        <span className="arrow">&#8594;</span>
-      </Link>
       <Footer />
     </Layout>
   )
