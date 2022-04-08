@@ -1,10 +1,10 @@
-import React, { Component } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import Hamburger from "./Hamburger"
 
-export default class Menu extends Component {
-  state = {
-    pages: [
+const Menu = () => {
+    const [open, setOpen] = useState(false)
+    const pages = [
       {
         id: 0,
         name: "home",
@@ -25,19 +25,11 @@ export default class Menu extends Component {
         name: "contact",
         url: "contact",
       },
-    ],
-    open: false,
-  }
+    ]
 
-  toggleMenu = () => {
-    this.setState({
-      open: !this.state.open,
-    })
-  }
-
-  render() {
-    const pages = this.state.pages
-    const open = this.state.open
+    const toggleMenu = () => {
+      setOpen(!open)
+    }
 
     const hamburger = open ? "menu-btn__hamburger open" : "menu-btn__hamburger"
     const nav = open ? "nav open" : "nav"
@@ -46,7 +38,7 @@ export default class Menu extends Component {
 
     return (
       <>
-        <Hamburger hamburgerClass={hamburger} handleClick={this.toggleMenu} />
+        <Hamburger hamburgerClass={hamburger} handleClick={toggleMenu} />
         <div className={nav}>
           <ul className={menuList}>
             {pages.map(page => (
@@ -64,5 +56,6 @@ export default class Menu extends Component {
         </div>
       </>
     )
-  }
 }
+
+export default Menu
