@@ -5,9 +5,9 @@ const data = {
             count: `01`,
             src: `https://res.cloudinary.com/shirlzzz9/image/upload/v1698950488/PortfolioAsset/Screenshot_from_2023-11-02_19-38-05.png`,
             title: `Contoso Dashboard - DevUp Solutions`,
-            content: `Made with React, Tailwindcss, Typescript.`,
-            demoLink: ``,
-            repoLink: ``,
+            content: `Made with React, Tailwindcss, Typescript. The demo shows a simplified version of the app.`,
+            demoLink: `https://nextjs13-workapp-mini-clone.vercel.app/`,
+            repoLink: `https://nextjs13-workapp-mini-clone-git-master-blenderwang.vercel.app/`,
         },
         {
             id: 1,
